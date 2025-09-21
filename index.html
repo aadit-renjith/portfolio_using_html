@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Aadit Renjith" />
+    <meta name="description" content="Personal web page about Aadit Renjith" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Aadit Renjith</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>About Aadit Renjith</h1>
+    </header>
+
+    <section id="profile">
+        <a href="https://www.linkedin.com/in/aadit-renjith" >
+            <img src="aaditimage2.jpg" alt="Aadit Renjith" id="profile_pic" />
+        </a>
+    </section>
+
+    <section id="about_me">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Aadit Renjith, a Computer Science student passionate about building impactful digital solutions. I enjoy working on full-stack development, cloud hosting, and system programming, while also exploring AI and machine learning for real-time applications. My projects range from health monitoring wearables with intelligent anomaly detection to scalable web applications. I’m always curious to learn, experiment, and turn ideas into practical technology.
+        </p>
+        <h3>Strengths</h3>
+        <ul>
+            <li>Technical Versatility-Experience in frontend, backend, cloud hosting, and embedded systems.</li>
+            <li>Problem-Solving Skills - Hands-on practice with C programs (OS concepts, memory management, parsers, networking).</li>
+            <li>AI & ML Enthusiasm - Practical exposure to ML models like XGBoost, LSTM, reinforcement learning, and model hosting.</li>
+            <li>Curiosity & Continuous Learning - Actively studying advanced topics (neural networks, embeddings, cloud).</li>
+            <li>Presentation Skills - Prepares clear presentations, abstracts, and structured reports.</li>
+        </ul>
+        <h3>Weaknesses</h3>
+        <ul>
+            <li>Time Management - Improving how I manage projects alongside academics to meet tighter deadlines.</li>
+            <li>Focused Prioritization - Working on narrowing down projects to achieve depth in specific areas</li>
+        </ul>
+    </section>
+
+    <section id="bucket-list">
+        <h2>My Bucket List</h2>
+        <table>
+                <tr>
+                    <th>Number</th>
+                    <th>Item</th>
+                    <th>Status</th>
+                </tr>
+            
+                <tr>
+                    <td>1</td>
+                    <td>Start a Business generating passive income</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Buy a Apartment in a metro city out of my own pocket</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Go to Thailand along with friends</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Go on a Camping Trip with strangers</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Go on a trip with school friends</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Own a Rifle</td>
+                    <td>Not Completed</td>
+                </tr>
+            
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Favorite Movie Clip</h2>
+        <video width="480" controls>
+            <source src="Captain America Lifts Thor's Hammer.mp4" type="video/mp4" />
+             Browser does not support the video.
+        </video>
+
+        <h2>Favorite Song</h2>
+        <audio controls>
+            <source src="losemymind.mp3" type="audio/mpeg" />
+             Browser does not support  audio.
+        </audio>
+    </section>
+
+    <section id="interaction">
+        <button id="welcome_button">Click Here.!</button>
+    </section>
+
+    <script>
+
+        document.getElementById('welcome_button').addEventListener('click', function() {
+            alert('Hola there my fellow mate, Welcome to My Page!');
+        });
+
+
+        profilePic = document.getElementById('profile_pic');
+        originalBgColor = document.body.style.backgroundColor;
+
+        profilePic.addEventListener('mouseenter', () => {
+            document.body.style.backgroundColor = '#445d74';
+        });
+
+        profilePic.addEventListener('mouseleave', () => {
+            document.body.style.backgroundColor = originalBgColor;
+        });
+    </script>
+</body>
+</html>
